@@ -17,7 +17,7 @@ p1.then((data)=>{
 	let b = a.map(v=>v*2);
 		setTimeout(()=>{
 			resolve(b);
-		})
+		},2000)
 	})
 }).then((data)=>{
 	output.innerHTML = data.join(" ");
