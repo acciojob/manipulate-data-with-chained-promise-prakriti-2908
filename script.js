@@ -12,7 +12,7 @@ let p1 = new Promise((resolve)=>{
 });
 
 p1.then((data)=>{
-	output.innerHTML = data.join(" ");
+	output.innerHTML = data;
 	return new Promise((resolve)=>{
 	let b = a.map(v=>v*2);
 		setTimeout(()=>{
@@ -20,5 +20,5 @@ p1.then((data)=>{
 		},2000)
 	})
 }).then((data)=>{
-	output.innerHTML = data.join(" ");
+	output.innerHTML = data;
 })
