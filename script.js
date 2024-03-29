@@ -14,7 +14,7 @@ let p1 = new Promise((resolve)=>{
 p1.then((data)=>{
 	output.innerHTML = data;
 	return new Promise((resolve)=>{
-	let b = a.map(v=>v*2);
+	let b = a.map(v=>v*2); 
 		setTimeout(()=>{
 			resolve(b);
 		},2000)
